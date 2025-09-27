@@ -16,7 +16,7 @@ jobs:
   echo-goodbye:
     runs-on: ubuntu-latest
     steps:  
-      - name: fail-step
-        run: exit 1
+      - name: succeed
+        run: echo "This step always succeeds"
       - name: Say Goodbye
         run: echo "Goodbye, World!"
