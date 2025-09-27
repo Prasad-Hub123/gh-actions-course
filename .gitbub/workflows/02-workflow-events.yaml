@@ -4,6 +4,7 @@ on:
   pull_request:
   schedule:
     - cron: '*/5 * * * *'  # Runs at midnight every Sunday
+  workflow_dispatch:
     
    
 jobs:
@@ -11,5 +12,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Show Trigger Event
-        run: echo "I've been triggered by a(name): ${{ github.event_name }} event."
+        run: echo "I've been triggered by a(n): ${{ github.event_name }} event."
  
